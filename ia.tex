@@ -3,14 +3,15 @@
 \usepackage[utf8]{inputenc}
 \usepackage[style=apa]{biblatex}
 \usepackage[margin=1in]{geometry}
-\usepackage[indent=0.5in]{parskip}  % remember to add comment about why this needed
+% \usepackage[indent=0.5in]{parskip}  % remember to add comment about why this needed (it also has some issues)
 \usepackage{hyperref}
 \usepackage{indentfirst}
-\usepackage{soul}
+\usepackage{mhchem}
+\usepackage{enumitem}
 
 \addbibresource{references.bib}
 \setlength{\bibitemsep}{12pt}
-\setlength{\parskip}{12pt}
+% \setlength{\parskip}{12pt}
 \renewcommand{\baselinestretch}{1.15}  % 1.15 spacing
 
 \title{\textbf{The Relationship between Glucose Concentration and the Rate of Carbon Dioxide Production during the Fermentation Process of Yeast}}
@@ -33,10 +34,29 @@ I have always enjoyed cooking as a mostly self-taught hobby. Having experimented
 \subsection{What Is Yeast}
 Yeast are single celled, eukaryotic organisms of the fungus kingdom. Like many living organisms, yeast requires food to survive, namely be converting carbohydrates or sugar sources to energy through either aerobic or anaerobic respiration \parencite{ref}. There exists many types of yeast. The one used in this internal assessment are part of the \emph{Saccharomyces cerevisiae} strain, which can be categorized into brewer's yeast (beer making) and baker's yeast (leavening agent). \parencite{ref}
 
+\medskip
+
 This internal assessment focuses on the use of active dry yeast, which consists of pellets of live yeast cells coated with a layer of dehydrated cells, \parencite{ref} allowing it to stay dormant to give it a longer shelf life. Hance, active dry yeast must be activated through rehydration in lukewarm water from 37$\,^{\circ}$C to 43$\,^{\circ}$C (optimal fermentation conditions) for 5 to 10 minutes in a process called proofing which also ensures that the yeast is dissolved in the water \parencite{ref}.
 
 \subsection{Aerobic and Anaerobic Respiration in Yeast}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque eros eget egestas mollis. Duis non mauris imperdiet, tristique ipsum vel, vestibulum mi. Nunc eget urna arcu. Morbi neque leo, accumsan at euismod ac, tempor eget purus. Curabitur a varius velit. Curabitur non imperdiet ipsum. Fusce porta odio eu nibh mattis molestie. Maecenas ut dictum mauris, consequat euismod lacus.
+It is well known that yeast reacts with glucose to produce ethanol and carbon dioxide. To understand the details of how this works, it is crucial to understand how yeast undergoes both aerobic and anaerobic respiration.
+
+\medskip
+
+Firstly, aerobic respiration is much more efficient and optimal than anaerobic respiration because of the significantly more ATP (adenosine triphosphate, energy carrying molecule) produced. In the presence of oxygen, yeast reacts with glucose to produce carbon dioxide and water:
+\begin{equation}
+    \ce{C6H12O6 + 6O2 ->[cellular respiration] 6CO2 + 6H2O}
+\end{equation}
+Going into the details of aerobic respiration its three steps:
+\begin{enumerate}[topsep=0pt, noitemsep]
+    \item Glycolysis
+    \item Tricarboxylic acid cycle
+    \item Oxidative phosphorylation (where most of the APT is produced)
+\end{enumerate}
+
+\medskip
+
+However, the focus of this internal assessment is on anaerobic respiration of yeast because the amount of oxygen was limited given the environment that the experiment was carried out in.
 
 \section{Kinetics}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque eros eget egestas mollis. Duis non mauris imperdiet, tristique ipsum vel, vestibulum mi. Nunc eget urna arcu. Morbi neque leo, accumsan at euismod ac, tempor eget purus. Curabitur a varius velit. Curabitur non imperdiet ipsum. Fusce porta odio eu nibh mattis molestie. Maecenas ut dictum mauris, consequat euismod lacus.
