@@ -1,5 +1,6 @@
 \documentclass[12pt]{article}
 
+\usepackage[table]{xcolor}
 \usepackage[utf8]{inputenc}
 \usepackage[style=apa]{biblatex}
 \usepackage[margin=1in]{geometry}
@@ -14,7 +15,6 @@
 \usepackage{caption}
 \usepackage{float}
 \usepackage{tabularx}
-\usepackage[table]{xcolor}
 
 \addbibresource{references.bib}
 \setlength{\bibitemsep}{12pt}
@@ -186,9 +186,19 @@ Before starting the lab, physical, environmental, and ethical safety issues must
     | >{\hsize=.6\hsize \linewidth=\hsize \raggedright\arraybackslash}X |
 }
     \hline
-    \cellcolor[HTML]{AA0044} Hazard & \cellcolor[HTML]{AA0044} Safety Considerations \\
+    \rowcolor[HTML]{CCCCCC} Hazard & Safety Considerations \\
     \hline
-    cell1  text & cell1 dummy text dummy text dummy textcell1 dummy text dummy text dummy textcell1 dummy text dummy text dummy textcell1 dummy text dummy text dummy textcell1 dummy text dummy text dummy text\\
+    Risk of broken glassware & consid\\
+    \hline
+    Risk of hotplate burns & consid\\
+    \hline
+    Wires plugged into electrical outlets & consid\\
+    \hline
+    Dumping yeast down the drain & consid\\
+    \hline
+    Wasting yeast & consid\\
+    \hline
+    Spills and splashes & consid\\
     \hline
 \end{tabularx}
 \end{table}
