@@ -10,11 +10,17 @@
 \usepackage{enumitem}
 \usepackage{xcolor}
 \usepackage{mathtools}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
 
 \addbibresource{references.bib}
 \setlength{\bibitemsep}{12pt}
 \setlength{\parindent}{0in}
 % \setlength{\parskip}{12pt}
+\captionsetup[table]{skip=6pt}
 \renewcommand{\baselinestretch}{1.15}  % 1.15 spacing
 
 \title{\textbf{The Relationship between Glucose Concentration and the Rate of Carbon Dioxide Production during the Fermentation Process of Yeast}}
@@ -167,7 +173,25 @@ If the order of the reaction is 0, the rate of reaction will not be dependent on
 
 \section{Design}
 
+\newpage
+
 \subsection{Safety}
+Before starting the lab, physical, environmental, and ethical safety issues must be taken into account. The following table lists them out:
+\begin{table}[H]
+\centering
+\caption{Safety hazards and their considerations}
+\label{table:1}
+\begin{tabularx}{\textwidth} {
+    | >{\hsize=.4\hsize \linewidth=\hsize \raggedright\arraybackslash}X
+    | >{\hsize=.6\hsize \linewidth=\hsize \raggedright\arraybackslash}X |
+}
+    \hline
+    \cellcolor[HTML]{AA0044} Hazard & \cellcolor[HTML]{AA0044} Safety Considerations \\
+    \hline
+    cell1  text & cell1 dummy text dummy text dummy textcell1 dummy text dummy text dummy textcell1 dummy text dummy text dummy textcell1 dummy text dummy text dummy textcell1 dummy text dummy text dummy text\\
+    \hline
+\end{tabularx}
+\end{table}
 
 \subsection{Hypothesis}
 
