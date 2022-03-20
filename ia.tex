@@ -15,6 +15,8 @@
 \usepackage{caption}
 \usepackage{float}
 \usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{siunitx}
 
 \addbibresource{references.bib}
 \setlength{\bibitemsep}{12pt}
@@ -206,7 +208,41 @@ Before starting the lab, physical, environmental, and ethical safety issues must
 \subsection{Hypothesis}
 After the yeast is fully activated and dissolved and mixed with glucose, the concentration of carbon dioxide produced will increase linearly for a short time until tapering off as all of the glucose gets used when the reaction goes to completion. For lower concentrations of glucose, the initial reaction velocity and the final concentration of carbon dioxide gas produced will be smaller than higher concentrations of glucose. When plotting the initial reaction velocity against the concentration of glucose, the curve of best-fit will fit the Michaelis-Menten kinetics model, passing through the origin.
 
+% todo table below or following table
 \subsection{Variables}
+The following table lists out all dependent, independent, and control variables used in my experiment, along with reasons and details to why each variable was chosen to be a specific type:
+\begin{table}[H]
+\centering
+\caption{Variables used in my experiment}
+\label{table:2}
+\begin{tabularx}{\textwidth} {
+    | >{\hsize=.2\hsize \linewidth=\hsize \raggedright\arraybackslash}X
+    | >{\hsize=.4\hsize \linewidth=\hsize \raggedright\arraybackslash}X
+    | >{\hsize=.4\hsize \linewidth=\hsize \raggedright\arraybackslash}X |}
+    \hline
+    \rowcolor[HTML]{CCCCCC} Variable type & Description & Reason and details \\
+    \hline
+    \multirow[t]{2}{\hsize}{Independent} & Time (\si{s}) & Time is an independent variable when plotting a concentration-time graph \\
+    \cline{2-3}
+    % TODO units same font as latex text issue
+    % TODO more consistent use of \si for all units
+    & Glucose concentration (\si{ppm}) & The glucose concentration will be varied by modifying the mass of glucose. Specific units for ppm are \si{mg.L^{-1}}. \\
+    \hline
+    \multirow[t]{2}{\hsize}{Dependent} & Carbon dioxide concentration (\si{ppm}) & When the reaction occurs, the carbon dioxide concentration will vary with time. Specific units for ppm are \si{ml.L^{-1}}. \\
+    \cline{2-3}
+    & Initial rate of carbon dioxide production (\si{ppm.s^{-1}}) & The initial rate of carbon dioxide production will depend on the glucose concentration. \\
+    \hline
+    \multirow[t]{3}{\hsize}{Control} & Volume of deionized water (\si{ml}) & res \\
+    \cline{2-3}
+    & Temperature of water (\si{\celsius}) & res \\
+    \cline{2-3}
+    & Mass of yeast used () & res \\
+    \cline{2-3}
+    & Time for the yeast to fully dissolve and activate & res \\
+    \hline
+\end{tabularx}
+\end{table}
+this is what text looks like if it is placed after the table
 
 \subsection{Apparatus and Experimental Setup}
 
