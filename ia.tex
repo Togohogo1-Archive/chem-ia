@@ -217,8 +217,8 @@ The following table lists out all dependent, independent, and control variables 
 \label{table:2}
 \begin{tabularx}{\textwidth} {
     | >{\hsize=.2\hsize \linewidth=\hsize \raggedright\arraybackslash}X
-    | >{\hsize=.4\hsize \linewidth=\hsize \raggedright\arraybackslash}X
-    | >{\hsize=.4\hsize \linewidth=\hsize \raggedright\arraybackslash}X |}
+    | >{\hsize=.3\hsize \linewidth=\hsize \raggedright\arraybackslash}X
+    | >{\hsize=.5\hsize \linewidth=\hsize \raggedright\arraybackslash}X |}
     \hline
     \rowcolor[HTML]{CCCCCC} Variable type & Description & Reason and details \\
     \hline
@@ -232,13 +232,11 @@ The following table lists out all dependent, independent, and control variables 
     \cline{2-3}
     & Initial rate of carbon dioxide production (\si{ppm.s^{-1}}) & The initial rate of carbon dioxide production will depend on the glucose concentration. \\
     \hline
-    \multirow[t]{3}{\hsize}{Control} & Volume of deionized water (\si{ml}) & res \\
+    \multirow[t]{3}{\hsize}{Control} & Volume of deionized water (\si{ml}) & Deionized water will be used instead of tap water since ions in tap water may influence rate of reaction. \\
     \cline{2-3}
-    & Temperature of water (\si{\celsius}) & res \\
+    & Temperature of water (\si{\celsius}) and mass of yeast used (\si{g}) & These variables will be kept constant because they both influence the rate of carbon dioxide production and the effects of only one independent variable is studied. \\
     \cline{2-3}
-    & Mass of yeast used () & res \\
-    \cline{2-3}
-    & Time for the yeast to fully dissolve and activate & res \\
+    & Time for the yeast to fully dissolve and activate & The yeast is given ample time to dissolve and activate in the deionized water. If the glucose is added too early, then the initial rate of reaction will be smaller than expected. \\
     \hline
 \end{tabularx}
 \end{table}
