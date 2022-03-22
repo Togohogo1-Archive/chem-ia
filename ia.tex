@@ -1,4 +1,4 @@
-{\documentclass[12pt]{article}
+\documentclass{article}
 
 \usepackage[table]{xcolor}
 \usepackage[utf8]{inputenc}
@@ -58,6 +58,7 @@ Aerobic respiration is much more efficient and optimal than anaerobic respiratio
 \begin{equation}
     \ce{\underset{\text{glucose}}{\ce{C6H12O6}} + 6O2 ->[cellular respiration] 6CO2 + 6H2O + ATP}
 \end{equation}
+
 Going into the details of aerobic respiration its three steps:
 \begin{enumerate}[topsep=\parskip, noitemsep]
     \item Glycolysis
@@ -124,22 +125,27 @@ For yeast,  alcoholic fermentation converts pyruvate into ethanol and carbon dio
 \begin{equation}
     \ce{\underset{\text{pyruvate}}{\ce{CH3COCOO-}} + H+ -> \underset{\text{acetaldehyde}}{\ce{CH3CHO}} + CO2}
 \end{equation}
+
 In the second step, acetaldehyde gets reduced to ethanol and NADH gets oxidized to \ce{NAD+}, effectively regenerating \ce{NAD+} to be reused in glycolysis:
 \begin{equation}
     \ce{CH3CHO + NADH + H+ -> \underset{\text{ethanol}}{\ce{C2H5OH}} + NAD}
 \end{equation}
+
 Equation (3) can be substituted in Equation (2) after some rearranging:
 \begin{multline*}
     \ce{glucose + 2HPO_{4}^{2-} + 2ADP + 2NAD+ \\-> \textcolor{red}{\ce{2CH3CHO}} + \textcolor{red}{\ce{2CO2}} + 2ATP + 2NADH + 2H2O}
 \end{multline*}
+
 Adding \ce{2H+} on both sides and substituting Equation (4)
 \begin{multline*}
     \ce{glucose + 2HPO_{4}^{2-} + 2ADP + 2NAD+ + \textcolor{blue}{\ce{2H+}} \\-> \textcolor{blue}{\ce{2C2H5OH}} + \textcolor{blue}{\ce{2NAD+}} + 2ATP + 2H2O}
 \end{multline*}
+
 Cancelling \ce{2NAD+} on both sides gives:
 \begin{equation}
     \ce{C6H12O6 + 2HPO_{4}^{2-} + 2ADP + 2H+ -> 2C2H5OH + 2CO2 + 2ATP + 2H2O}
 \end{equation}
+
 Which is more familiarly known as:
 \begin{equation}
     \ce{C6H12O6 ->[yeast] 2C2H5OH + 2CO2}
@@ -165,13 +171,75 @@ Additionally, the rate law states how the reaction velocity will be directly pro
 \begin{equation}
     V = k[A]^m
 \end{equation}
-where k is is the proportionality constant \parencite{ref} and the sum of the powers denote the order of the reaction. In the case of alcoholic fermentation, the order is purely dependent on $m$.
+where $k$ is is the rate constant \parencite{ref} and the sum of the powers denote the order of the reaction. In the case of alcoholic fermentation, the order is purely dependent on $m$.
 
 \medskip
 
 If the order of the reaction is 0, the rate of reaction will not be dependent on the concentration of the reactants, that is $V = k[A]^0 = k$. If the order of the reaction is 1, the rate of reaction will be proportional to the concentration of the reactants, that is $V = k[A]^1 = k[A]$.
 
 \subsection{Michaelis Menten Enzyme Kinetics}
+When reactions are enzyme-catalyzed, enzyme kinetics proves to be a better model at predicting the behvaiour of the reaction. The Michaelis Menten model, proposed by Leonor Michaelis and Maud Menten in 1913 is concerned with $V_0$, the relationship between initial reaction velocity (rate of enzyme catalysis) and the substrate concentration:
+\begin{equation}
+    \ce{E + S <=>[k_1][k_{-1}] ES ->[k_2] E + P}
+\end{equation}
+
+Where
+\begin{itemize}[topsep=\parskip, noitemsep]
+    \item E denotes the enzyme, which is treated as zyamze, the enzyme responsible for fermentation in yeast
+    \item S denotes the substrate, the glucose solution
+    \item P denotes the product, the carbon dioxide gas formed
+    \item ES denotes the enzyme substrate complex, an intermediate step in where the enzyme temporarily binds to the substrate, which eventually gets dissociated into the same enzyme and the product
+\end{itemize}
+
+\medskip
+
+Additionally:
+\begin{itemize}[topsep=\parskip, noitemsep]
+    \item $k_1$ denotes the rate constant associated with the formation of \ce{ES}
+    \item $k_{-1}$ is associated with the breakdown of \ce{ES} to \ce{E}
+    \item $k_2$ is associated with the dissociation of \ce{ES} to \ce{E + P}
+\end{itemize}
+
+\medskip
+
+Technically, $k_{-2}$ also exists, but since the Michaelis Menten model is only concerned with $V_0$ so the breakdown of \ce{E + P} into \ce{ES} is negligible.
+
+\medskip
+
+Firstly, a formula can be derived for $V_0$, using the equation \ce{ES -> E + P}:
+\begin{equation}
+    V_0 = k_2 \lbrack \ce{EP} \rbrack
+\end{equation}
+
+The rate of formation of \ce{ES} is given by:
+\begin{equation}
+    k_1 \lbrack \ce{E} \rbrack
+\end{equation}
+
+And the rate of breakdown of \ce{ES} is given by:
+\begin{equation}
+    (k_{-1} + k_2) \lbrack \ce{ES} \rbrack
+\end{equation}
+
+In 1924, George Briggs and John Haldane proposed the steady state assumption to further simplify enzyme kinetics, which assumes that the rate of formation is equal to the rate of breakdown of \ce{ES}:
+\begin{equation}
+    k_1 \lbrack \ce{E} \rbrack = (k_{-1} + k_2) \lbrack \ce{ES} \rbrack
+\end{equation}
+
+Rearranging gives:
+\begin{equation}
+    \frac{\lbrack \ce{E} \rbrack \lbrack \ce{S} \rbrack}{\lbrack \ce{ES} \rbrack} = \frac{k_{-1}+k_2}{k_1}
+\end{equation}
+
+$\frac{k_{-1}+k_2}{k_1}$ can be defined as a new variable $K_m$, the Michaelis constant. Additionally, the equation can be rearranged to represent [\ce{ES}] in terms of concentrations of known substances:
+\begin{equation}
+    \lbrack \ce{ES} \rbrack = \frac{\lbrack \ce{E} \rbrack \lbrack \ce{S} \rbrack}{K_m}
+\end{equation}
+
+Considering the total amount of enzyme in the reaction as $\ce{E_T}$, which consists of enzymes bounded to the substrate and free enzymes. [\ce{E_T}] can then be represented as follows:
+\begin{equation}
+    \lbrack \ce{E_T} \rbrack = \lbrack \ce{E} \rbrack + \lbrack \ce{ES} \rbrack
+\end{equation}
 
 \section{Design}
 
@@ -273,8 +341,8 @@ The following materials were used in my experiment:
 \end{table}
 
 The experiment was carried out following the procedure below:
-\begin{enumerate}
-    \setlength\itemsep{-5pt}
+\begin{enumerate}[topsep=\parskip, noitemsep]
+    % \setlength\itemsep{-5pt}
     \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tristique urna, sodales sollicitudin quam molestie nec. Nunc vel faucibus tellus
     \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tristique urna, sodales sollicitudin quam molestie nec. Nunc vel faucibus tellus
     \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tristique urna, sodales sollicitudin quam molestie nec. Nunc vel faucibus tellus
