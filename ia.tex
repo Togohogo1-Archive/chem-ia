@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+{\documentclass[12pt]{article}
 
 \usepackage[table]{xcolor}
 \usepackage[utf8]{inputenc}
@@ -161,7 +161,7 @@ The rate of reaction, also known as the reaction velocity $V$ with respect to a 
     V = \text{rate} = -\frac{d[A]}{dt} = \frac{1}{2}\frac{d[B]}{dt} = \frac{1}{2}\frac{d[C]}{dt}
 \end{equation}
 
-Additionally, the rate law states how the reaction velocity will be proportional to the product of reactants, each reactant raised to a power:
+Additionally, the rate law states how the reaction velocity will be directly proportional to the product of reactants, each reactant raised to a power:
 \begin{equation}
     V = k[A]^m
 \end{equation}
@@ -228,11 +228,11 @@ The following table lists out all dependent, independent, and control variables 
     % TODO more consistent use of \si for all units
     & Glucose concentration (\si{ppm}) & The glucose concentration will be varied by modifying the mass of glucose. Specific units for ppm are \si{mg.L^{-1}}. \\
     \hline
-    \multirow[t]{2}{\hsize}{Dependent} & Carbon dioxide concentration (\si{ppm}) & When the reaction occurs, the carbon dioxide concentration will vary with time. Specific units for ppm are \si{ml.L^{-1}}. \\
+    \multirow[t]{2}{\hsize}{Dependent} & Carbon dioxide concentration (\si{ppm}) & When the reaction occurs, the carbon dioxide concentration will vary with time. Specific units for ppm are \si{mL.L^{-1}}. \\
     \cline{2-3}
     & Initial rate of carbon dioxide production (\si{ppm.s^{-1}}) & The initial rate of carbon dioxide production will depend on the glucose concentration. \\
     \hline
-    \multirow[t]{3}{\hsize}{Control} & Volume of deionized water (\si{ml}) & Deionized water will be used instead of tap water since ions in tap water may influence rate of reaction. \\
+    \multirow[t]{3}{\hsize}{Control} & Volume of deionized water (\si{mL}) & Deionized water will be used instead of tap water since ions in tap water may influence rate of reaction. \\
     \cline{2-3}
     & Temperature of water (\si{\celsius}) and mass of yeast used (\si{g}) & These variables will be kept constant because they both influence the rate of carbon dioxide production and the effects of only one independent variable is studied. \\
     \cline{2-3}
@@ -257,8 +257,8 @@ The following materials were used in my experiment:
     & \textbullet Deionized water \\
     \hline
     Containers and tools & \textbullet 1\,\si{L} beaker \\
-    & \textbullet 100\,\si{ml} graduated cylinder $(\pm0.5\,\si{cm})$ \\  % TODO turn brackets into $()$
-    & \textbullet 250\,\si{ml} Nalgene bottle \\
+    & \textbullet 100\,\si{mL} graduated cylinder $(\pm0.5\,\si{cm})$ \\  % TODO turn brackets into $()$
+    & \textbullet 250\,\si{mL} Nalgene bottle \\
     & \textbullet Magnetic stir bar \\
     & \textbullet Folded paper for holding reactants \\
     & \textbullet Scoopula \\
@@ -267,6 +267,7 @@ The following materials were used in my experiment:
     & \textbullet Vernier LabQuest2 \\
     & \textbullet Vernier stainless steel temperature probe \\
     & \textbullet A\&D EJ-200 scale $(\pm0.005\,\si{cm})$ \\
+    & \textbullet Vernier \ce{CO2} gas sensor $(\pm0.005\,\si{cm})$ \\
     \hline
 \end{tabularx}
 \end{table}
@@ -301,6 +302,11 @@ The experiment was carried out following the procedure below:
 \section{Evaluation}
 
 \section{Conclusion}
+Although the experiment did not match up perfectly with the theory, the results still made sense as a whole for a sufficient level of analysis. Evidently, this experiment models an extremely downscaled version of the many aspects involved in baking, thus presenting itself as more of a study into fermentation and enzyme kinetics rather than a practical guide to baking the best loaf of bread.
+
+\medskip
+
+The explanation of yeast producing carbon dioxide to cause bread to rise is widely accepted by many, but also an understatement, because it often fails to acknowledge the complex and fascinating chemistry involved behind the scenes.
 
 \nocite{*}
 
@@ -323,4 +329,4 @@ The experiment was carried out following the procedure below:
 
 \subsection{Appendix E}
 
-\end{document}
+\end{document}}
