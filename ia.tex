@@ -208,37 +208,47 @@ Technically, $k_{-2}$ also exists, but since the Michaelis Menten model is only 
 
 Firstly, a formula can be derived for $V_0$, using the equation \ce{ES -> E + P}:
 \begin{equation}
-    V_0 = k_2 \lbrack \ce{EP} \rbrack
+    V_0 = k_2 [\ce{EP}]
 \end{equation}
 
 The rate of formation of \ce{ES} is given by:
 \begin{equation}
-    k_1 \lbrack \ce{E} \rbrack
+    k_1 [\ce{E}]
 \end{equation}
 
 And the rate of breakdown of \ce{ES} is given by:
 \begin{equation}
-    (k_{-1} + k_2) \lbrack \ce{ES} \rbrack
+    (k_{-1} + k_2) [\ce{ES}]
 \end{equation}
 
 In 1924, George Briggs and John Haldane proposed the steady state assumption to further simplify enzyme kinetics, which assumes that the rate of formation is equal to the rate of breakdown of \ce{ES}:
 \begin{equation}
-    k_1 \lbrack \ce{E} \rbrack = (k_{-1} + k_2) \lbrack \ce{ES} \rbrack
+    k_1 [\ce{E}] = (k_{-1} + k_2) [\ce{ES}]
 \end{equation}
 
-Rearranging gives:
+Rearranging Equation (14) gives:
 \begin{equation}
-    \frac{\lbrack \ce{E} \rbrack \lbrack \ce{S} \rbrack}{\lbrack \ce{ES} \rbrack} = \frac{k_{-1}+k_2}{k_1}
+    \frac{[\ce{E}][\ce{S}]}{[\ce{ES}]} = \frac{k_{-1}+k_2}{k_1}
 \end{equation}
 
 $\frac{k_{-1}+k_2}{k_1}$ can be defined as a new variable $K_m$, the Michaelis constant. Additionally, the equation can be rearranged to represent [\ce{ES}] in terms of concentrations of known substances:
 \begin{equation}
-    \lbrack \ce{ES} \rbrack = \frac{\lbrack \ce{E} \rbrack \lbrack \ce{S} \rbrack}{K_m}
+    [\ce{ES}] = \frac{[\ce{E}][\ce{S}]}{K_m}
 \end{equation}
 
 Considering the total amount of enzyme in the reaction as $\ce{E_T}$, which consists of enzymes bounded to the substrate and free enzymes. [\ce{E_T}] can then be represented as follows:
 \begin{equation}
-    \lbrack \ce{E_T} \rbrack = \lbrack \ce{E} \rbrack + \lbrack \ce{ES} \rbrack
+    [\ce{E_T}] = [\ce{E}] + [\ce{ES}]
+\end{equation}
+
+Solving Equation (17) for [\ce{E}] and substituting it in Equation (16) gives:
+\begin{equation}
+    [\ce{ES}] = \frac{([\ce{E_T}] + [\ce{ES}]) [\ce{S}]}{K_m}
+\end{equation}
+
+Equation (18) is rearranged to represent [\ce{ES}] in terms of known values:
+\begin{equation}
+    [\ce{ES}] = [\ce{ET}]\frac{[\ce{S}]}{\ce{S} + K_m}
 \end{equation}
 
 \section{Design}
