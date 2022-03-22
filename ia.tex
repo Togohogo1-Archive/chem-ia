@@ -248,8 +248,20 @@ Solving Equation (17) for [\ce{E}] and substituting it in Equation (16) gives:
 
 Equation (18) is rearranged to represent [\ce{ES}] in terms of known values:
 \begin{equation}
-    [\ce{ES}] = [\ce{ET}]\frac{[\ce{S}]}{\ce{S} + K_m}
+    [\ce{ES}] = [\ce{E_T}]\frac{[\ce{S}]}{\ce{S} + K_m}
 \end{equation}
+
+Taking Equation (11) and substituting [\ce{ES}]:
+\begin{equation}
+    V_0 = k_2[\ce{E_T}]\frac{[\ce{S}]}{\ce{S} + K_m}
+\end{equation}
+
+$k_2[\ce{E_T}]$ can also be used to describe the reaction velocity. If [\ce{E_t}] was used in place of [\ce{ES}] in Equation (11), all enzymes are undergoing catalysis. This is defined as $V_{max}$, the maximum reaction velocity for a set of conditions. Rewriting Equation (20) gives the final Michaelis Menten equation:
+\begin{equation}
+    V_0 = V_{max}\frac{[S]}{[S] + K_m}
+\end{equation}
+
+If $[\ce{S}] << K_m$, then $V_0 \approx V_{max}\frac{[\ce{S}]}{K_m}$, meaning that the reaction velocity will be directly proportional to the substrate concentration (first order reaction). If $[\ce{S}] >> K_m$, then $V_0 \approx V_{max}$, meaning the reaction velocity does not depend on the substrate concentration (zero order reaction). If $[\ce{S}] = K_m$, then $V_0 = \frac{V_{max}}{2}$, meaning $K_m$ equals the substrate concentration at half the maximum reaction velocity. This information makes intuitive sense when graphed:
 
 \section{Design}
 
