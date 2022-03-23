@@ -25,13 +25,12 @@
 \setlength{\parindent}{0in}
 % \setlength{\parskip}{12pt}
 \captionsetup[table]{skip=6pt}
-\renewcommand{\baselinestretch}{1.15}  % 1.15 spacing
+\renewcommand{\baselinestretch}{1.15}
 
 \title{\textbf{The Relationship between Glucose Concentration and the Rate of Carbon Dioxide Production during the Fermentation Process of Yeast}}
 \author{}
 \date{}
 
-% https://chem-space.com/search
 \begin{document}
 
 \pagenumbering{gobble}
@@ -68,8 +67,6 @@ Aerobic respiration is broken down into 3 steps:
     \item Oxidative phosphorylation (where most of the APT is produced)
 \end{enumerate}
 
-% TODO italicize key terms?
-
 \medskip
 
 However, the focus of this internal assessment is on anaerobic respiration of yeast due to the limited supply of oxygen in the environment that the experiment was carried out in. When exploring the details of anaerobic respiration, glycolysis is determined to be a step that both aerobic and anaerobic respiration share, and it itself can be split up ito 3 steps\parencite{ref}.
@@ -84,11 +81,11 @@ The first step of glycolysis converts glucose into fructose 1,6-biphosphate (F-1
     \label{fig:figure1}
 \end{figure}
 
-Glucose goes through a series of reactions catalyzed by multiple enzymes (represented by straight arrows), which consumes 2 ATP in the process. ATP turns to ADP (adenosine diphosphate) when a phosphate group (\ce{HPO_{4}^{2-}}) gets transferred from each ATP to the sugars that glucose gets broken down into, before forming F-1,6-BP.
+Glucose goes through a series of reactions catalyzed by multiple enzymes (represented by straight arrows), which consumes \ce{2ATP} in the process. ATP turns to ADP (adenosine diphosphate) when a phosphate group (\ce{HPO_{4}^{2-}}) gets transferred from each ATP to the sugars that glucose gets broken down into, before forming F-1,6-BP.
 
 \medskip
 
-The second step of glycolysis involves splitting F-1,6-BP into 2 three-carbon fragments, glyceraldehyde 3-phosphate (GAP) and dihydroxyacetone phosphate (DHAP), outlined in the figure below:
+The second step of glycolysis involves splitting F-1,6-BP into 2 three-carbon fragments, glyceraldehyde 3-phosphate (GAP) and dihydroxyacetone phosphate (DHAP), shown in the figure below:
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.55\linewidth]{figures/figure_02.png}
@@ -96,32 +93,24 @@ The second step of glycolysis involves splitting F-1,6-BP into 2 three-carbon fr
     \label{fig:figure1}
 \end{figure}
 
-\medskip
-
-When catalyzed with an enzyme, F-1,6-BP splits into the three-carbon fragments but only GAP can continue the glycolysis process. However, GAP and DHAP exist in equilibrium, meaning all the DHAP eventually turns to GAP.
+Only GAP can continue the glycolysis process, but since GAP and DHAP exist in equilibrium, all the DHAP eventually gets converted to GAP.
 
 \medskip
 
 % TODO this happens 2 times
-The third and final step of glycolysis converts the DHAP to pyruvate, another three-carbon molecule while producing ATP, outlined in the figure below:
+The third and final step of glycolysis converts the DHAP to pyruvate, another three-carbon molecule, shown in the figure below:
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.886\linewidth]{figures/figure_03.png}
-    \caption{Conversion of DHAP to pyruvate. Intermediate steps are represented by the arrows.}
+    \caption{Conversion of DHAP to pyruvate, which happens twice. Intermediate steps are represented by the arrows.}
     \label{fig:figure1}
 \end{figure}
 
-\medskip
-
-Like glucose, GAP goes through another series of reactions catalyzed by multiple enzymes that eventually turn it into Pyruvate. During one step of the process, a molecule called \ce{NAD+} (nicotinamide adenine dinucleotide, a coenzyme found in the cell that is crucial to metabolic processes) \parencite{ref} gets reduced to NADH wihle GAP is simultaneously oxidized. The phosphate groups that were given from the ATP in the first step is combined with ADP twice to form 2 ATP. Since the DHAP got converted into GAP in the previous step, 4 total ATP is formed \parencite{ref}.
-
-\medskip
-
-The net equation for the formation of pyruvate is thus given by:
+Like glucose, GAP goes through another series of reactions catalyzed by multiple enzymes that eventually turn it into Pyruvate. During one step of the process, a molecule called \ce{NAD+} (nicotinamide adenine dinucleotide, a coenzyme found in the cell that is crucial to metabolic processes) \parencite{ref} gets reduced to NADH while GAP is simultaneously oxidized. The phosphate groups that were taken from ATP in the first step is combined with ADP twice to form \ce{2ATP}. Since the DHAP got converted into GAP in the previous step, 4 total ATP is formed \parencite{ref}. Thus, the net equation for the formation of pyruvate is thus given by:
 \begin{equation}
     \ce{Glucose + 2HPO_{4}^{2-} + 2ADP + 2NAD+ -> 2Pyruvate + 2ATP + 2 NADH + 2H+ + 2H2O}
 \end{equation} % TODO \ce{2pyruvate} issue
-According to Equation (2), the end result of glycolysis leaves 2 pyruvate, 2 NADH, 2 ATP, 2 \ce{H2O}, and 2 \ce{H+}. If there is unreacted glucose, glycolysis will continue. However, a cell's supply of \ce{NAD+} is limited, so it must be regenerated. In aerobic respiration, the pyruvate goes through the tricarboxylic acid cycle to produce even more NADH that eventually gets oxidized to \ce{NAD+} during oxidative phosphorylation, which produces most of the ATP associated with aerobic respiration as a bonus. In anaerobic respiration, fermentation provides an alternate pathway to turn the NADH back to \ce{NAD+}.
+According to Equation (2), the end result of glycolysis leaves 2 pyruvate, 2 NADH, 2 ATP, 2 \ce{H2O}, and 2 \ce{H+}. If there is unreacted glucose, glycolysis will continue. However, a cell's supply of \ce{NAD+} is limited, so it must be regenerated. In aerobic respiration, the pyruvate goes through the tricarboxylic acid cycle to produce even more NADH that eventually gets oxidized to \ce{NAD+} during oxidative phosphorylation. In anaerobic respiration, fermentation provides an alternate pathway to turn the NADH back to \ce{NAD+}.
 
 \medskip
 
@@ -135,10 +124,10 @@ For yeast,  alcoholic fermentation converts pyruvate into ethanol and carbon dio
 
 In the second step, acetaldehyde gets reduced to ethanol and NADH gets oxidized to \ce{NAD+}, effectively regenerating \ce{NAD+} to be reused in glycolysis:
 \begin{equation}
-    \ce{CH3CHO + NADH + H+ -> \underset{\text{Ethanol}}{\ce{C2H5OH}} + NAD}
+    \ce{CH3CHO + NADH + H+ -> \underset{\text{Ethanol}}{\ce{C2H5OH}} + \ce{NAD+}}
 \end{equation}
 
-Equation (3) can be substituted in Equation (2) after some rearranging:
+Given the previous few equations, some rearranging can be done to derive the full equation that represents fermentation. Substituing Equation (3) in Equation (2):
 \begin{equation*}
     \ce{Glucose + 2HPO_{4}^{2-} + 2ADP + 2NAD+ -> \textcolor{red}{\ce{2CH3CHO}} + \textcolor{red}{\ce{2CO2}} + 2ATP + 2NADH + 2H2O}
 \end{equation*}
