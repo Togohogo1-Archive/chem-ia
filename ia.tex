@@ -17,6 +17,8 @@
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{siunitx}
+% \usepackage{amsmath}
+\usepackage{amssymb}
 
 \addbibresource{references.bib}
 \setlength{\bibitemsep}{12pt}
@@ -407,21 +409,26 @@ The following table displays qualitative observations that were observed for dif
     \hline
     \rowcolor[HTML]{CCCCCC} Mass /\ce{g} $\pm0.01\,\si{g}$ & Concentration /\si{M} & Observations \\
     \hline
-    0.1 & \dots & \dots \\
+    0.1 & $0.0056 \pm 0.0006$ & Enough condensation to cover top of bottle, solution was very consistent and smooth \\
     \hline
-    0.25 & \dots & \dots \\
+    0.25 & $0.0139 \pm 0.0006$ & A lot of condensation, considerably more than 0.1\,\si{g}, some condensation started to drip back into the solution \\
     \hline
-    0.5 & \dots & \dots \\
+    0.5 & $0.0278 \pm 0.0007$ & When mixing solution, some white foam appeared on top, a good amount of condensation was formed \\
     \hline
-    1.0 & \dots & \dots \\
+    1.0 & $0.0008 \pm 0.0555$ & Less condensation was observed than smaller concentrations, traces of very fine precipitate left at the bottom, depsite stirring with a stir bar \\
     \hline
 \end{tabularx}
 \end{table}
 
-A sample calculation for the concentration uncertainty is provided below:
+A sample calculation for the concentration uncertainty using the basic method is provided below for mass 0.5\,\si{g}. The molar mass of glucose is taken to be 180.18\,\si{g.mol^{-1}} \parencite{ref}:
 \begin{align*}
-    9 + 10 &= 21 \\
-    21 &\neq 10 + 9
+    c &= \frac{n}{v} \\
+    &= \frac{m/M}{v} \\
+    &= 0.02775\,\si{mol.L^{-1}} \\
+    \Delta c &= c\left(\frac{\Delta m}{m} + \frac{\Delta v}{v}\right) \\
+    &= 0.02775\left(\frac{0.01}{0.5} + \frac{0.0005}{0.1}\right) \\
+    &= 0.000694\,\si{mol.L^{-1}} \\
+    \therefore\,c &= (0.0278 \pm 0.0007)\,\si{mol.L^{-1}}
 \end{align*}
 
 %% TODO reaction velocity vs rate of reaction
@@ -438,7 +445,7 @@ The following table displays the equation for the line of best fit and $R^2$ val
         | >{\hsize=.25\hsize \linewidth=\hsize \raggedright\arraybackslash}X
         | >{\hsize=.25\hsize \linewidth=\hsize \raggedright\arraybackslash}X |}
         \hline
-        \rowcolor[HTML]{CCCCCC} Glucose concentration /\si{M} & Line of best fit equation and $R^2$ for trial 1 & Line of best fit equation and $R^2$ for trial 2 & Average slope (initial reation velocity) /\si{ppm.s^-1} \\
+        \rowcolor[HTML]{CCCCCC} Glucose concentration /\si{M} & Line of best fit equation and $R^2$ for trial 1 & Line of best fit equation and $R^2$ for trial 2 & Average slope (initial reation velocity) /\si{ppm.s^{-1}} \\
         \hline
         \dots & \dots & \dots & \dots \\
         \hline
