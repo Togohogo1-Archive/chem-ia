@@ -19,7 +19,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{subcaption}
-
+% TODO still haven't decided when to use co2 or concentration
 \addbibresource{references.bib}
 \setlength{\bibitemsep}{12pt}
 \setlength{\parindent}{0in}
@@ -40,28 +40,28 @@
 \pagenumbering{arabic}
 
 \section{Introduction}
-I have always enjoyed cooking as a mostly self-taught hobby. Having experimented with multiple aspects of cooking throughout my life eventually led me to explore baking, where I was fascinated by timelapse footages of bread rising in the oven. As such, I was inspired to make my own bread, following basic recipes online with a surface-level understanding of the chemistry involving the release of carbon dioxide from yeast fermentation. However, the realm of baking is very large and not limited to bread only, as there exist many types of doughs for pizza, puff pastry, cookies, etc. One notable difference between these different types of dough is the amount of sugar used, and although some of these repices do not call for yeast, I was still interested by its function in baking, which led me to form my research question: \textbf{``The Relationship between Glucose Concentration and the Rate of Carbon Dioxide Production during the Fermentation Process of Yeast''}.
+I have always enjoyed cooking as a mostly self-taught hobby. Having experimented with multiple aspects of cooking throughout my life eventually led me to explore baking, where I was fascinated by timelapse footages of bread rising in the oven. As such, I was inspired to make my own bread, finding and reading basic recipes with a surface-level understanding of the chemistry involving the release of carbon dioxide from yeast fermentation. However, the realm of baking is very large and not limited to bread only, as there exist many types of doughs for pizza, puff pastry, cookies, etc. One notable difference between these different types of dough is the amount of sugar used, and although some of these repices do not call for yeast, I was still interested by its function in baking, which led me to form my research question: \textbf{``The Relationship between Glucose Concentration and the Rate of Carbon Dioxide Production during the Fermentation Process of Yeast''}.
 
 \section{Background}
 
 \subsection{What Is Yeast}
-Yeast are single celled, eukaryotic organisms of the fungus kingdom. Like many living organisms, yeast requires food to survive, namely be converting carbohydrates or sugar sources to energy through either aerobic or anaerobic respiration \parencite{ref}. There exists many types of yeast. The one used in this internal assessment are part of the \emph{Saccharomyces cerevisiae} strain, which can be categorized into brewer's yeast (beer making) and baker's yeast (leavening agent) \parencite{ref}.
+Yeast are single celled, eukaryotic organisms of the fungus kingdom. Like many other life forms, yeast requires food to survive, by converting carbohydrates or saccharides into energy through aerobic or anaerobic respiration \parencite{ref}. Among the many different types of yeast, the one used in this internal assessment is part of the \emph{Saccharomyces cerevisiae} strain - specifically, baker's yeast \parencite{ref}.
 
 \medskip
 
-This internal assessment focuses on the use of active dry yeast, which consists of pellets of live yeast cells coated with a layer of dehydrated cells, \parencite{ref} allowing it to stay dormant to give it a longer shelf life. Hence, active dry yeast must be activated through rehydration in lukewarm water from 37$\,^{\circ}$C to 43$\,^{\circ}$C (optimal fermentation conditions) for 5 to 10 minutes in a process called proofing which also ensures that the yeast is dissolved in the water \parencite{ref}.
+This internal assessment will focus on the use of active dry yeast, which contain pellets of live yeast cells coated with a layer of dehydrated yeast cells, \parencite{ref} allowing it to stay dormant, giving it a longer shelf life. Hence, active dry yeast must be activated through rehydration in lukewarm water from 37$\,^{\circ}$C to 43$\,^{\circ}$C (optimal fermentation conditions) for 5 to 10 minutes in a process called proofing, ensuring that the yeast gets dissolved in the water \parencite{ref}.
 
 \subsection{Aerobic and Anaerobic Respiration in Yeast}
-It is well known that yeast reacts with glucose to produce ethanol and carbon dioxide. To understand the details of how this works, it is crucial to understand how yeast undergoes both aerobic and anaerobic respiration.
+It is well known that yeast reacts with glucose to produce ethanol and carbon dioxide. To explore the details of how this works, it is crucial to understand how yeast undergoes both aerobic and anaerobic respiration.
 
 \medskip
 
-Aerobic respiration is much more efficient and optimal than anaerobic respiration because of the significantly more ATP (adenosine triphosphate, energy carrying molecule) produced. The chemical formula for aerobic respiration is given below:
+Aerobic respiration is much more efficient and optimal than anaerobic respiration because significantly more ATP (adenosine triphosphate, energy carrying molecule) is produced. The chemical formula for aerobic respiration is given below:
 \begin{equation}
     \ce{\underset{\text{Glucose}}{\ce{C6H12O6}} + 6O2 ->[cellular respiration] 6CO2 + 6H2O + ATP}
 \end{equation}
 
-Going into the details of aerobic respiration its three steps:
+Aerobic respiration is broken down into 3 steps:
 \begin{enumerate}[topsep=\parskip, noitemsep]
     \item Glycolysis
     \item Tricarboxylic acid cycle
@@ -72,11 +72,11 @@ Going into the details of aerobic respiration its three steps:
 
 \medskip
 
-However, the focus of this internal assessment is on anaerobic respiration of yeast because the amount of oxygen was limited given the environment that the experiment was carried out in. The only similarity between aerobic and anaerobic respiration is glycolysis, which prompts to explore this step in more detail \parencite{ref}.
+However, the focus of this internal assessment is on anaerobic respiration of yeast due to the limited supply of oxygen in the environment that the experiment was carried out in. When exploring the details of anaerobic respiration, glycolysis is determined to be a step that both aerobic and anaerobic respiration share, and it itself can be split up ito 3 steps\parencite{ref}.
 
 \medskip
 
-The first step of glycolysis converts glucose into fructose 1,6-biphosphate (F-1,6-BP), outlined in the figure below:
+The first step of glycolysis converts glucose into fructose 1,6-biphosphate (F-1,6-BP), shown in the figure below:
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{figures/figure_01.png}
@@ -84,7 +84,7 @@ The first step of glycolysis converts glucose into fructose 1,6-biphosphate (F-1
     \label{fig:figure1}
 \end{figure}
 
-Glucose goes through a series of reactions catalyzed by multiple enzymes, which consumes 2 ATP in the process. ATP turns to ADP (adenosine diphosphate) when a phosphate group (\ce{HPO_{4}^{2-}}) gets transferred from the ATP to the sugars that glucose gets broken down into, eventually leading to the formation of F-1,6-BP.
+Glucose goes through a series of reactions catalyzed by multiple enzymes (represented by straight arrows), which consumes 2 ATP in the process. ATP turns to ADP (adenosine diphosphate) when a phosphate group (\ce{HPO_{4}^{2-}}) gets transferred from each ATP to the sugars that glucose gets broken down into, before forming F-1,6-BP.
 
 \medskip
 
@@ -102,6 +102,7 @@ When catalyzed with an enzyme, F-1,6-BP splits into the three-carbon fragments b
 
 \medskip
 
+% TODO this happens 2 times
 The third and final step of glycolysis converts the DHAP to pyruvate, another three-carbon molecule while producing ATP, outlined in the figure below:
 \begin{figure}[H]
     \centering
@@ -127,7 +128,7 @@ According to Equation (2), the end result of glycolysis leaves 2 pyruvate, 2 NAD
 % TODO figure out when to use name and chemical
 % TODO chemical capitals
 % TODO add more references
-For yeast,  alcoholic fermentation converts pyruvate into ethanol and carbon dioxide, both of with are waste products. It consists of two steps that are also catalyzed by enzymes. The first step in this conversion process involves the decarboxylation of pyruvate to acetaldehyde, producing carbon dioxide as a by product, as shown below:
+For yeast,  alcoholic fermentation converts pyruvate into ethanol and carbon dioxide, both of with are waste products. It consists of 2 steps that are also catalyzed by enzymes. The first step in this conversion process involves the decarboxylation of pyruvate to acetaldehyde, producing carbon dioxide as a by product, as shown below:
 \begin{equation}
     \ce{\underset{\text{Pyruvate}}{\ce{CH3COCOO-}} + H+ -> \underset{\text{Acetaldehyde}}{\ce{CH3CHO}} + CO2}
 \end{equation}
@@ -284,7 +285,7 @@ Before starting the lab, physical, environmental, and ethical safety issues must
     | >{\hsize=.6\hsize \linewidth=\hsize \raggedright\arraybackslash}X |
 }
     \hline
-    \rowcolor[HTML]{CCCCCC} Hazard & Safety Considerations \\
+    \textbf{Hazard} & \textbf{Safety Considerations} \\
     \hline
     Risk of broken glassware & If possible, glassware should be handled with both hands to minimize the chance of breakage. Extra care should be taken during the cleaning process as glassware may be slippery when wet.\\
     \hline
@@ -316,7 +317,7 @@ The following table lists out all dependent, independent, and control variables 
     | >{\hsize=.3\hsize \linewidth=\hsize \raggedright\arraybackslash}X
     | >{\hsize=.5\hsize \linewidth=\hsize \raggedright\arraybackslash}X |}
     \hline
-    \rowcolor[HTML]{CCCCCC} Variable type & Description & Reason and details \\
+    \textbf{Variable type} & \textbf{Description} & \textbf{Reason and details} \\
     \hline
     \multirow[t]{2}{\hsize}{Independent} & Time (\si{s}) & Time is an independent variable when plotting a concentration-time graph. \\
     \cline{2-3}
@@ -346,7 +347,8 @@ The following materials were used in my experiment:
     | >{\hsize=.35\hsize \linewidth=\hsize \raggedright\arraybackslash}X
     | >{\hsize=.65\hsize \linewidth=\hsize \raggedright\arraybackslash}X |}
     \hline
-    \rowcolor[HTML]{CCCCCC} Category & Materials \\
+    \textbf{Category} & \textbf{Materials} \\
+    \hline
     Compounds and reactants & \textbullet Red Star active dry yeast \\
     & \textbullet Lab grade glucose \\
     & \textbullet Deionized water \\
@@ -407,7 +409,7 @@ The following table displays qualitative observations that were observed for dif
     | >{\hsize=.3\hsize \linewidth=\hsize \raggedright\arraybackslash}X
     | >{\hsize=.4\hsize \linewidth=\hsize \raggedright\arraybackslash}X |}
     \hline
-    \rowcolor[HTML]{CCCCCC} Mass /\ce{g} $\pm0.01\,\si{g}$ & Concentration /\si{M} & Observations \\
+    \textbf{Mass /\ce{g} $\pm0.01\,\si{g}$} & \textbf{Concentration /\si{M}} & \textbf{Observations} \\
     \hline
     0.10 & $0.0056 \pm 0.0006$ & Enough condensation to cover top of bottle, solution was very consistent and smooth \\
     \hline
@@ -433,6 +435,7 @@ A sample calculation for the concentration uncertainty using the basic method is
 The raw data collected were concentration-time graphs generated by the Vernier \ce{CO2} gas sensor. In total, 2 sets of data were collected for each concentration. As an example, the first trial for 0.5\,\si{g} of glucose added is shown below. The initial reaction velocity was taken to be the slope of the line of best fit for the whole scatter plot because the reaction has not reached equilibrium. A full list of graphs and raw data can be found in the appendix.  %% TODO specify which appendix, full "list" -> "list" not the right word to use
 \begin{figure}[H]
     \renewcommand{\figurename}{Graph}
+    \setcounter{figure}{1}
     \centering
     \includegraphics{figures/graph_02.png}
     \vspace*{-12pt}
@@ -452,7 +455,7 @@ The following table displays the equation for the line of best fit and $R^2$ val
     | >{\hsize=.27\hsize \linewidth=\hsize \raggedright\arraybackslash}X
     | >{\hsize=.2\hsize \linewidth=\hsize \raggedright\arraybackslash}X |}
     \hline
-    \rowcolor[HTML]{CCCCCC} Glucose concentration /\si{M} & Line of best fit equation and $R^2$ for trial 1 & Line of best fit equation and $R^2$ for trial 2 & Average slope (initial reation velocity) /\si{ppm.s^{-1}} \\
+    \textbf{Glucose concentration /\si{M}} & \textbf{Line of best fit equation and $R^2$ for trial 1} & \textbf{Line of best fit equation and $R^2$ for trial 2} & \textbf{Average slope (initial reation velocity) /\si{ppm.s^{-1}}} \\
     \hline
     $0.0056 \pm 0.0006$ & $y=35.324x, R^2=0.9962$ & $y=81.96x, R^2=0.9936$ & $59 \pm 20$ \\
     \hline
@@ -468,6 +471,7 @@ The following table displays the equation for the line of best fit and $R^2$ val
 With the processed data in tablex, reaction velocity can be plotted against glucose concentration to obtain the Michaelis Menten model. Doing a curve fit in excel reveals $V_{max} \approx -99$ and $K_2 \approx -99$
 \begin{figure}[H]
     \renewcommand{\figurename}{Graph}
+    \setcounter{figure}{2}
     \centering
     \includegraphics{figures/graph_03.png}
     \vspace*{-12pt}
@@ -492,16 +496,82 @@ Although the experiment did not match up perfectly with the theory, the results 
 \newpage
 
 % TODO figure out why "appendices" are not preferred
-\section{Appendices}
+\section{Appendix}
+\begin{table}[H]
+\centering
+\caption{Full table of collected raw data}
+\label{table:appendix1}
+\begin{tabularx}{\textwidth} {| X | X | X | X | X | X | X | X | X |}
+    \hline
+    \textbf{Time /s} & \multicolumn{8}{l |}{\textbf{Concentration of \ce{CO2} over time given mass of glucose added /ppm}} \\
+    \cline{2-9}
+    & \multicolumn{2}{l |}{\textbf{0.10\,\ce{g}}} & \multicolumn{2}{l |}{\textbf{0.25\,\ce{g}}} &\multicolumn{2}{l |}{\textbf{0.50\,\ce{g}}} & \multicolumn{2}{l |}{\textbf{1.00\,\ce{g}}} \\
+    \cline{2-9}
+    & \textbf{Trial 1} & \textbf{Trial 2} & \textbf{Trial 1} & \textbf{Trial 2} & \textbf{Trial 1} & \textbf{Trial 2} & \textbf{Trial 1} & \textbf{Trial 2} \\
+    \hline
+    0 & 231 & 481 & 261 & 135 & 198 & 135 & 135 & 231 \\
+    \hline
+    20 & 826 & 4395 & 1451 & 2985 & 731 & 3267 & 511 & 700 \\
+    \hline
+    40 & 1358 & 7650 & 2516 & 5396 & 1263 & 6117 & 856 & 1013 \\
+    \hline
+    60 & 1858 & 10124 & 3550 & 7620 & 2140 & 8778 & 1139 & 1419 \\
+    \hline
+    80 & 2390 & 12096 & 4362 & 9373 & 3237 & 10530 & 1482 & 1953 \\
+    \hline
+    100 & 2985 & 13161 & 5146 & 11032 & 4082 & 12003 & 1890 & 2609 \\
+    \hline
+    120 & 3613 & 14162 & 5991 & 12535 & 5083 & 13035 & 2296 & 3550 \\
+    \hline
+    140 & 4145 & 15415 & 6899 & 13725 & 6304 & 13630 & 2766 & 4551 \\
+    \hline
+    160 & 4738 & 16542 & 7870 & 14820 & 7713 & 14257 & 3517 & 5678 \\
+    \hline
+    180 & 5396 & 17796 & 8904 & 15917 & 8997 & 15259 & 4112 & 7025 \\
+    \hline
+    200 & 6210 & 18827 & 9779 & 17262 & 10281 & 16073 & 4801 & 8276 \\
+    \hline
+    220 & 7181 & 20643 & 10656 & 19329 & 11721 & 17357 & 5615 & 9748 \\
+    \hline
+    240 & 7900 & 21803 & 11501 & 20580 & 13035 & 18921 & 6397 & 11219 \\
+    \hline
+    260 & 8621 & 23211 & 12283 & 21677 & 14132 & 20237 & 7275 & 12659 \\
+    \hline
+    280 & 9466 & 24807 & 13161 & 22741 & 15352 & 21238 & 8120 & 14069 \\
+    \hline
+    300 & 10248 & 25528 & 14194 & 24181 & 16636 & 22272 & 9060 & 15478 \\
+    \hline
+    320 & 11032 & 26686 & 15196 & 26405 & 18608 & 23682 & 10281 & 17168 \\
+    \hline
+    340 & 11814 & 27752 & 16167 & 28502 & 20205 & 24933 & 11375 & 19516 \\
+    \hline
+    360 & 12629 & 28847 & 17826 & 29818 & 21271 & 26905 & 12316 & 21145 \\
+    \hline
+    380 & 13287 & 29881 & 19705 & 31258 & 22335 & 28721 & 13254 & 22867 \\
+    \hline
+    400 & 13943 & 32135 & 21301 & 32572 & 23243 & 30256 & 14225 & 24464 \\
+    \hline
+    420 & 14664 & 33575 & 22930 & 34607 & 24275 & 32009 & 15039 & 26562 \\
+    \hline
+    440 & 15385 & 34796 & 24870 & 36768 & 25558 & 34264 & 16010 & 28940 \\
+    \hline
+    460 & 16041 & 36205 & 26937 & 38364 & 27719 & 36329 & 17262 & 31384 \\
+    \hline
+    480 & 17012 & 38677 & 29036 & 41464 & 29943 & 38301 & 18797 & 34170 \\
+    \hline
+    500 & 18139 & 41464 & 31258 & 44094 & 31664 & 39555 & 20174 & 36674 \\
+    \hline
+    520 & 19423 & 42561 & 33419 & 46003 & 32604 & 41716 & 21271 & 39366 \\
+    \hline
+    540 & 20519 & 44094 & 35578 & 47602 & 33699 & 45315 & 22146 & 42028 \\
+    \hline
+    560 & 21301 & 45973 & 37802 & 49322 & 34889 & 49072 & 23180 & 44815 \\
+    \hline
+    580 & 21803 & 48414 & 40117 & 51201 & 36110 & 54083 & 24181 & 47602 \\
+    \hline
+    600 & 22711 & 49292 & 42717 & 53143 & 37270 & 59999 & 25278 & 50106 \\
+    \hline
+\end{tabularx}
+\end{table}
 
-\subsection{Appendix A}
-
-\subsection{Appendix B}
-
-\subsection{Appendix C}
-
-\subsection{Appendix D}
-
-\subsection{Appendix E}
-
-\end{document}}
+\end{document}
