@@ -318,21 +318,20 @@ The following table lists out all dependent, independent, and control variables 
     \hline
     \rowcolor[HTML]{CCCCCC} Variable type & Description & Reason and details \\
     \hline
-    \multirow[t]{2}{\hsize}{Independent} & Time (\si{s}) & Time is an independent variable when plotting a concentration-time graph \\
+    \multirow[t]{2}{\hsize}{Independent} & Time (\si{s}) & Time is an independent variable when plotting a concentration-time graph. \\
     \cline{2-3}
-    % TODO units same font as latex text issue
     % TODO more consistent use of \si for all units
-    & Glucose concentration (\si{ppm}) & The glucose concentration will be varied by modifying the mass of glucose. Specific units for ppm are \si{mg.L^{-1}}. \\
+    & Glucose concentration (\si{M}) & The glucose concentration will be varied by modifying the mass of glucose. \\
     \hline
     \multirow[t]{2}{\hsize}{Dependent} & Carbon dioxide concentration (\si{ppm}) & When the reaction occurs, the carbon dioxide concentration will vary with time. Specific units for ppm are \si{mL.L^{-1}}. \\
     \cline{2-3}
     & Initial rate of carbon dioxide production (\si{ppm.s^{-1}}) & The initial rate of carbon dioxide production will depend on the glucose concentration. \\
     \hline
-    \multirow[t]{3}{\hsize}{Control} & Volume of deionized water (\si{mL}) & Deionized water will be used instead of tap water since ions in tap water may influence rate of reaction. \\
+    \multirow[t]{3}{\hsize}{Control} & Volume of deionized water (\si{mL}) & Deionized water will be used instead of tap water since disassociated ions in tap water may influence rate of reaction. \\
     \cline{2-3}
-    & Temperature of water (\si{\celsius}) and mass of yeast used (\si{g}) & These variables will be kept constant because they both influence the rate of carbon dioxide production and the effects of only one independent variable is studied. \\
+    & Temperature of water (\si{\celsius}) and mass of yeast used (\si{g}) & These variables will be kept constant because they both influence the rate of carbon dioxide production, and the effects of modifying only one independent variable is studied. \\
     \cline{2-3}
-    & Time for the yeast to fully dissolve and activate & The yeast is given ample time to dissolve and activate in the deionized water. If the glucose is added too early, then the initial rate of reaction will be smaller than expected. \\
+    & Time for the yeast to fully dissolve and activate & The yeast will be given ample time to dissolve and activate in the deionized water. If the glucose is added too early, then the initial rate of reaction will be smaller than expected. \\
     \hline
 \end{tabularx}
 \end{table}
@@ -424,10 +423,10 @@ The following table displays qualitative observations that were observed for dif
 A sample calculation for the concentration uncertainty using the basic method is provided below for mass 0.5\,\si{g}. The molar mass of glucose is taken to be 180.18\,\si{g.mol^{-1}} \parencite{ref}:
 \begin{align*}
     c &= \frac{n}{v} = \frac{m/M}{v} \\
-    &= \frac{0.5/180.18}{0.1} = 0.02775\,\si{mol.L^{-1}} \\  %% TODO better equations
+    &= \frac{0.5/180.18}{0.1} = 0.02775\,\si{M} \\  %% TODO better equations
     \Delta c &= c\left(\frac{\Delta m}{m} + \frac{\Delta v}{v}\right) = 0.02775\left(\frac{0.01}{0.5} + \frac{0.0005}{0.1}\right) \\
-    &= 0.000694\,\si{mol.L^{-1}} \\
-    \therefore\,c &= (0.0278 \pm 0.0007)\,\si{mol.L^{-1}}
+    &= 0.000694\,\si{M} \\
+    \therefore\,c &= (0.0278 \pm 0.0007)\,\si{M}
 \end{align*}
 
 %% TODO reaction velocity vs rate of reaction
