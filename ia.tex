@@ -4,12 +4,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[style=apa]{biblatex}
 \usepackage[margin=1in]{geometry}
-% \usepackage[indent=0.5in]{parskip}  % remember to add comment about why this needed (it also has some issues)
 \usepackage{hyperref}
 \usepackage{indentfirst}
 \usepackage{mhchem}
 \usepackage{enumitem}
-\usepackage{xcolor}
 \usepackage{mathtools}
 \usepackage{array}
 \usepackage{caption}
@@ -425,7 +423,7 @@ The following table displays qualitative observations that were observed for dif
 A sample calculation for the concentration uncertainty using the basic method is provided below for mass 0.5\,\si{g}. The molar mass of glucose is taken to be 180.18\,\si{g.mol^{-1}} \parencite{ref}:
 \begin{align*}
     c &= \frac{n}{v} \\
-    &= \frac{m/M}{v} \\
+    &= \frac{m/M}{v} \\  %% TODO better equations
     &= 0.02775\,\si{mol.L^{-1}} \\
     \Delta c &= c\left(\frac{\Delta m}{m} + \frac{\Delta v}{v}\right) \\
     &= 0.02775\left(\frac{0.01}{0.5} + \frac{0.0005}{0.1}\right) \\
