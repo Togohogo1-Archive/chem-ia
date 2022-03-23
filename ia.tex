@@ -48,7 +48,7 @@ Yeast are single celled, eukaryotic organisms of the fungus kingdom. Like many o
 
 \medskip
 
-This internal assessment will focus on the use of active dry yeast, which contain pellets of live yeast cells coated with a layer of dehydrated yeast cells, \parencite{ref} allowing it to stay dormant, giving it a longer shelf life. Hence, active dry yeast must be activated through rehydration in lukewarm water from 37$\,^{\circ}$C to 43$\,^{\circ}$C (optimal fermentation conditions) for 5 to 10 minutes in a process called proofing, ensuring that the yeast gets dissolved in the water \parencite{ref}.
+This internal assessment will focus on the use of active dry yeast, which contain pellets of live yeast cells coated with a layer of dehydrated yeast cells, \parencite{ref} allowing it to stay dormant, giving it a longer shelf life. Hence, active dry yeast must be activated through rehydration in lukewarm water from 37\,\si{\celsius} to 43\,\si{\celsius} (optimal fermentation conditions) for 5 to 10 minutes in a process called proofing, ensuring that the yeast gets dissolved in the water \parencite{ref}.
 
 \subsection{Aerobic and Anaerobic Respiration in Yeast}
 It is well known that yeast reacts with glucose to produce ethanol and carbon dioxide. To explore the details of how this works, it is crucial to understand how yeast undergoes both aerobic and anaerobic respiration.
@@ -71,7 +71,7 @@ Aerobic respiration is broken down into 3 steps:
 
 However, the focus of this internal assessment is on anaerobic respiration of yeast due to the limited supply of oxygen in the environment that the experiment was carried out in. When exploring the details of anaerobic respiration, glycolysis is determined to be a step that both aerobic and anaerobic respiration share, and it itself can be split up ito 3 steps\parencite{ref}.
 
-\medskip
+\newpage
 
 The first step of glycolysis converts glucose into fructose 1,6-biphosphate (F-1,6-BP), shown in the figure below:
 \begin{figure}[H]
@@ -90,7 +90,7 @@ The second step of glycolysis involves splitting F-1,6-BP into 2 three-carbon fr
     \centering
     \includegraphics[width=0.55\linewidth]{figures/figure_02.png}
     \caption{Conversion of F-1,6-BP to GAP and DHAP}
-    \label{fig:figure1}
+    \label{fig:figure2}
 \end{figure}
 
 Only GAP can continue the glycolysis process, but since GAP and DHAP exist in equilibrium, all the DHAP eventually gets converted to GAP.
@@ -103,7 +103,7 @@ The third and final step of glycolysis converts the DHAP to pyruvate, another th
     \centering
     \includegraphics[width=0.886\linewidth]{figures/figure_03.png}
     \caption{Conversion of DHAP to pyruvate, which happens twice. Intermediate steps are represented by the arrows.}
-    \label{fig:figure1}
+    \label{fig:figure3}
 \end{figure}
 
 Like glucose, GAP goes through another series of reactions catalyzed by multiple enzymes that eventually turn it into Pyruvate. During one step of the process, a molecule called \ce{NAD+} (nicotinamide adenine dinucleotide, a coenzyme found in the cell that is crucial to metabolic processes) \parencite{ref} gets reduced to NADH while GAP is simultaneously oxidized. The phosphate groups that were taken from ATP in the first step is combined with ADP twice to form \ce{2ATP}. Since the DHAP got converted into GAP in the previous step, 4 total ATP is formed \parencite{ref}. Thus, the net equation for the formation of pyruvate is thus given by:
@@ -117,7 +117,7 @@ According to Equation (2), the end result of glycolysis leaves 2 pyruvate, 2 NAD
 % TODO figure out when to use name and chemical
 % TODO chemical capitals
 % TODO add more references
-For yeast,  alcoholic fermentation converts pyruvate into ethanol and carbon dioxide, both of with are waste products. It consists of 2 steps that are also catalyzed by enzymes. The first step in this conversion process involves the decarboxylation of pyruvate to acetaldehyde, producing carbon dioxide as a by product, as shown below:
+For yeast, alcoholic fermentation converts pyruvate into ethanol and carbon dioxide, both of with are waste products. It consists of 2 steps that are also catalyzed by enzymes. The first step in this conversion process involves the decarboxylation of pyruvate to acetaldehyde, producing carbon dioxide as a by product, as shown below:
 \begin{equation}
     \ce{\underset{\text{Pyruvate}}{\ce{CH3COCOO-}} + H+ -> \underset{\text{Acetaldehyde}}{\ce{CH3CHO}} + CO2}
 \end{equation}
@@ -174,14 +174,14 @@ Where $k$ is is the rate constant and the sum of the powers denote the order of 
 If the order of the reaction is 0, the rate of reaction will not be dependent on the concentration of the reactants, that is $V = k[A]^0 = k$. If the order of the reaction is 1, the rate of reaction will be proportional to the concentration of the reactants, that is $V = k[A]^1 = k[A]$.
 
 \subsection{Michaelis Menten Enzyme Kinetics}
-When reactions are enzyme-catalyzed, enzyme kinetics proves to be a better model at predicting the behvaiour of the reaction. The Michaelis Menten model, proposed by Leonor Michaelis and Maud Menten in 1913 is concerned with $V_0$, the relationship between initial reaction velocity (rate of enzyme catalysis) and the substrate concentration \parencite{ref}:
+When reactions are enzyme-catalyzed, enzyme kinetics may also be used to predicting the behvaiour of the reaction. The Michaelis Menten model, proposed by Leonor Michaelis and Maud Menten in 1913 is concerned with the relationship between initial reaction velocity $V_0$ (rate of enzyme catalysis), and the substrate concentration \parencite{ref}:
 \begin{equation}
     \ce{E + S <=>[k_1][k_{-1}] ES ->[k_2] E + P}
 \end{equation}
 
 Where
 \begin{itemize}[topsep=\parskip, noitemsep]
-    \item E denotes the enzyme, which is treated as zyamze, the enzyme responsible for fermentation in yeast
+    \item E denotes the enzyme zyamse, the main enzyme responsible for fermentation in yeast
     \item S denotes the substrate, the glucose solution
     \item P denotes the product, the carbon dioxide gas formed
     \item ES denotes the enzyme substrate complex, an intermediate step in where the enzyme temporarily binds to the substrate, which eventually gets dissociated into the same enzyme and the product
@@ -192,24 +192,24 @@ Where
 Additionally:
 \begin{itemize}[topsep=\parskip, noitemsep]
     \item $k_1$ denotes the rate constant associated with the formation of \ce{ES}
-    \item $k_{-1}$ is associated with the breakdown of \ce{ES} to \ce{E}
+    \item $k_{-1}$ is associated with the breakdown of \ce{ES} to \ce{E + S}
     \item $k_2$ is associated with the dissociation of \ce{ES} to \ce{E + P}
 \end{itemize}
 
 \medskip
 
-Technically, $k_{-2}$ also exists, but since the Michaelis Menten model is only concerned with $V_0$ so the breakdown of \ce{E + P} into \ce{ES} is negligible.
+Technically, $k_{-2}$ also exists, but since the Michaelis Menten model is only concerned with $V_0$, the breakdown of \ce{E + P} into \ce{ES} is negligible.
 
 \medskip
 
 Firstly, a formula can be derived for $V_0$, using the equation \ce{ES -> E + P}:
 \begin{equation}
-    V_0 = k_2 [\ce{EP}]
+    V_0 = k_2[\ce{ES}]
 \end{equation}
 
 The rate of formation of \ce{ES} is given by:
 \begin{equation}
-    k_1 [\ce{E}]
+    k_1[\ce{E}][\ce{S}]
 \end{equation}
 
 And the rate of breakdown of \ce{ES} is given by:
@@ -217,9 +217,9 @@ And the rate of breakdown of \ce{ES} is given by:
     (k_{-1} + k_2) [\ce{ES}]
 \end{equation}
 
-In 1924, George Briggs and John Haldane proposed the steady state assumption to further simplify enzyme kinetics, which assumes that the rate of formation is equal to the rate of breakdown of \ce{ES}:
+In 1924, George Briggs and John Haldane proposed the steady state assumption to further simplify enzyme kinetics, which assumes that the rate of formation and the rate of breakdown of \ce{ES} are equal:
 \begin{equation}
-    k_1 [\ce{E}] = (k_{-1} + k_2) [\ce{ES}]
+    k_1[\ce{E}][\ce{S}] = (k_{-1} + k_2) [\ce{ES}]
 \end{equation}
 
 Rearranging Equation (14) gives:
@@ -232,17 +232,17 @@ $\frac{k_{-1}+k_2}{k_1}$ can be defined as a new variable $K_m$, the Michaelis c
     [\ce{ES}] = \frac{[\ce{E}][\ce{S}]}{K_m}
 \end{equation}
 
-Considering the total amount of enzyme in the reaction as $\ce{E_T}$, which consists of enzymes bounded to the substrate and free enzymes. [\ce{E_T}] can then be represented as follows:
+Considering the total amount of enzyme in the reaction as $\ce{E_T}$, consisting of enzymes bounded to the substrate and free enzymes. [\ce{E_T}] can then be represented as follows:
 \begin{equation}
     [\ce{E_T}] = [\ce{E}] + [\ce{ES}]
 \end{equation}
 
 Solving Equation (17) for [\ce{E}] and substituting it in Equation (16) gives:
 \begin{equation}
-    [\ce{ES}] = \frac{([\ce{E_T}] + [\ce{ES}]) [\ce{S}]}{K_m}
+    [\ce{ES}] = \frac{([\ce{E_T}] - [\ce{ES}]) [\ce{S}]}{K_m}
 \end{equation}
 
-Equation (18) is rearranged to represent [\ce{ES}] in terms of known values:
+Rearranging equation (18) to represent [\ce{ES}] in terms of known values:
 \begin{equation}
     [\ce{ES}] = [\ce{E_T}]\frac{[\ce{S}]}{\ce{S} + K_m}
 \end{equation}
@@ -252,17 +252,27 @@ Taking Equation (11) and substituting [\ce{ES}]:
     V_0 = k_2[\ce{E_T}]\frac{[\ce{S}]}{\ce{S} + K_m}
 \end{equation}
 
-$k_2[\ce{E_T}]$ can also be used to describe the reaction velocity. If [\ce{E_t}] was used in place of [\ce{ES}] in Equation (11), all enzymes are undergoing catalysis. This is defined as $V_{max}$, the maximum reaction velocity for a set of conditions. Rewriting Equation (20) gives the final Michaelis Menten equation:
+$k_2[\ce{E_T}]$ can also be used to describe the reaction velocity. If [\ce{E_t}] was used in place of [\ce{ES}] in Equation (11), all enzymes are undergoing catalysis. This state defined as $V_{max}$, the maximum reaction velocity for a set of conditions. Rewriting Equation (20) gives the final Michaelis Menten equation:
 \begin{equation}
     V_0 = V_{max}\frac{[S]}{[S] + K_m}
 \end{equation}
 
-If $[\ce{S}] << K_m$, then $V_0 \approx V_{max}\frac{[\ce{S}]}{K_m}$, meaning that the reaction velocity will be directly proportional to the substrate concentration (first order reaction). If $[\ce{S}] >> K_m$, then $V_0 \approx V_{max}$, meaning the reaction velocity does not depend on the substrate concentration (zero order reaction). If $[\ce{S}] = K_m$, then $V_0 = \frac{V_{max}}{2}$, meaning $K_m$ equals the substrate concentration at half the maximum reaction velocity. This information makes intuitive sense when graphed:
-
-\section{Design}
+If $[\ce{S}] << K_m$, then $V_0 \approx V_{max}\frac{[\ce{S}]}{K_m}$, meaning that the reaction velocity will be directly proportional to the substrate concentration (first order reaction). If $[\ce{S}] >> K_m$, then $V_0 \approx V_{max}$, meaning the reaction velocity does not depend on the substrate concentration (zero order reaction). If $[\ce{S}] = K_m$, then $V_0 = \frac{V_{max}}{2}$, meaning $K_m$ always equals the substrate concentration at half the maximum reaction velocity. This information makes intuitive sense when graphed:
+\begin{figure}[H]
+    \renewcommand{\figurename}{Graph}
+    \setcounter{figure}{0}
+    \centering
+    \includegraphics{figures/graph_01.png}
+    \vspace*{-12pt}
+    \caption{The Michaelis Menten model with arbitrary values}
+    \label{fig:graph1}
+    \renewcommand{\figurename}{Figure}
+\end{figure}
 
 \newpage
 
+\section{Design}
+s
 \subsection{Safety}
 Before starting the lab, physical, environmental, and ethical safety issues must be taken into account. The following table lists them out:
 \begin{table}[H]
