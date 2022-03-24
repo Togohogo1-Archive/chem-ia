@@ -18,7 +18,9 @@
 % \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{caption}
 \usepackage{subcaption}
+
 % TODO still haven't decided when to use co2 or concentration
 \addbibresource{references.bib}
 \setlength{\bibitemsep}{12pt}
@@ -494,8 +496,8 @@ Although the experiment did not match up perfectly with the theory, the results 
 
 \newpage
 
-\renewcommand{\figurename}{Appendix}
-\setcounter{figure}{0}
+\captionsetup[table]{name=Appendix}
+\setcounter{table}{0}
 
 \section{Appendix}
 All the data exported from the LabQuest is compiled into a large table below:
@@ -577,25 +579,27 @@ All the data exported from the LabQuest is compiled into a large table below:
 \end{table}
 
 The following figures show graphs that were generated from the raw data. Graph (c) from figure 4 is used as an example in section 5:
+\renewcommand{\figurename}{Appendix}
+\setcounter{figure}{1}
 \begin{figure}[H]
     \caption{Concentration-time graphs for grams of glucose added from the first trial}
     \centering
-    \begin{subfigure}{0.45\linewidth}
+    \begin{subfigure}{0.49\linewidth}
         \includegraphics[width=\linewidth]{figures/appendix/appendix2_0.01_trial1.png}
         \vspace*{-18pt}
         \caption{0.10\,\si{g}}
     \end{subfigure}
-    \begin{subfigure}{0.45\linewidth}
+    \begin{subfigure}{0.49\linewidth}
         \includegraphics[width=\linewidth]{figures/appendix/appendix2_0.25_trial1.png}
         \vspace*{-18pt}
         \caption{0.25\,\si{g}}
     \end{subfigure}
-    \begin{subfigure}{0.45\linewidth}
+    \begin{subfigure}{0.49\linewidth}
         \includegraphics[width=\linewidth]{figures/appendix/appendix2_0.50_trial1.png}
         \vspace*{-18pt}
         \caption{0.50\,\si{g}}
     \end{subfigure}
-    \begin{subfigure}{0.45\linewidth}
+    \begin{subfigure}{0.49\linewidth}
         \includegraphics[width=\linewidth]{figures/appendix/appendix2_1.00_trial1.png}
         \vspace*{-18pt}
         \caption{1.00\,\si{g}}
@@ -605,22 +609,22 @@ The following figures show graphs that were generated from the raw data. Graph (
 \begin{figure}[H]
     \caption{Concentration-time graphs for grams of glucose added from the second trial}
     \centering
-    \begin{subfigure}{0.45\linewidth}
+    \begin{subfigure}{0.49\linewidth}
         \includegraphics[width=\linewidth]{figures/appendix/appendix2_0.01_trial2.png}
         \vspace*{-18pt}
         \caption{0.10\,\si{g}}
     \end{subfigure}
-    \begin{subfigure}{0.45\linewidth}
+    \begin{subfigure}{0.49\linewidth}
         \includegraphics[width=\linewidth]{figures/appendix/appendix2_0.25_trial2.png}
         \vspace*{-18pt}
         \caption{0.25\,\si{g}}
     \end{subfigure}
-    \begin{subfigure}{0.45\linewidth}
+    \begin{subfigure}{0.49\linewidth}
         \includegraphics[width=\linewidth]{figures/appendix/appendix2_0.50_trial2.png}
         \vspace*{-18pt}
         \caption{0.50\,\si{g}}
     \end{subfigure}
-    \begin{subfigure}{0.45\linewidth}
+    \begin{subfigure}{0.49\linewidth}
         \includegraphics[width=\linewidth]{figures/appendix/appendix2_1.00_trial2.png}
         \vspace*{-18pt}
         \caption{1.00\,\si{g}}
