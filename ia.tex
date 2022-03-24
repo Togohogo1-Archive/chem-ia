@@ -15,17 +15,14 @@
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{siunitx}
-% \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{caption}
 \usepackage{subcaption}
 
 % TODO still haven't decided when to use co2 or concentration
 \addbibresource{references.bib}
 \setlength{\bibitemsep}{12pt}
 \setlength{\parindent}{0in}
-% \setlength{\parskip}{12pt}
 \captionsetup[table]{skip=6pt}
 \renewcommand{\baselinestretch}{1.15}
 
@@ -99,7 +96,6 @@ Only GAP can continue the glycolysis process, but since GAP and DHAP exist in eq
 
 \newpage
 
-% TODO this happens 2 times
 The third and final step of glycolysis converts the DHAP to pyruvate, another three-carbon molecule, shown in the figure below:
 \begin{figure}[H]
     \centering
@@ -111,7 +107,8 @@ The third and final step of glycolysis converts the DHAP to pyruvate, another th
 Like glucose, GAP goes through another series of reactions catalyzed by multiple enzymes that eventually turn it into Pyruvate. During one step of the process, a molecule called \ce{NAD+} (nicotinamide adenine dinucleotide, a coenzyme found in the cell that is crucial to metabolic processes) \parencite{ref} gets reduced to NADH while GAP is simultaneously oxidized. The phosphate groups that were taken from ATP in the first step is combined with ADP twice to form \ce{2ATP}. Since the DHAP got converted into GAP in the previous step, 4 total ATP is formed \parencite{ref}. Thus, the net equation for the formation of pyruvate is thus given by:
 \begin{equation}
     \ce{Glucose + 2HPO_{4}^{2-} + 2ADP + 2NAD+ -> 2Pyruvate + 2ATP + 2 NADH + 2H+ + 2H2O}
-\end{equation} % TODO \ce{2pyruvate} issue
+\end{equation}
+
 According to Equation (2), the end result of glycolysis leaves 2 pyruvate, 2 NADH, 2 ATP, 2 \ce{H2O}, and 2 \ce{H+}. If there is unreacted glucose, glycolysis will continue. However, a cell's supply of \ce{NAD+} is limited, so it must be regenerated. In aerobic respiration, the pyruvate goes through the tricarboxylic acid cycle to produce even more NADH that eventually gets oxidized to \ce{NAD+} during oxidative phosphorylation. In anaerobic respiration, fermentation provides an alternate pathway to turn the NADH back to \ce{NAD+}.
 
 \medskip
@@ -149,7 +146,7 @@ Which is more familiarly known as:
     \ce{C6H12O6 ->[yeast] 2C2H5OH + 2CO2}
 \end{equation}
 
-\section{Kinetics}  % TODO fermentation process changen to alcoholic fermentation
+\section{Kinetics}
 
 \subsection{Basic Kinetics}
 Given the following chemical reaction denoting alcoholic fermentation:
