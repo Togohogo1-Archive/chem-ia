@@ -412,7 +412,7 @@ The following table displays qualitative observations that were observed for dif
     | >{\hsize=.3\hsize \linewidth=\hsize \raggedright\arraybackslash}X
     | >{\hsize=.4\hsize \linewidth=\hsize \raggedright\arraybackslash}X |}
     \hline
-    \textbf{Mass /\ce{g} $\pm\textbf{0.01}$} & \textbf{Concentration /\si{M}} & \textbf{Observations} \\
+    \textbf{Mass /\ce{g} $\pm0.01$} & \textbf{Concentration /\si{M}} & \textbf{Observations} \\
     \hline
     0.10 & $0.0056 \pm 0.0006$ & Enough condensation to cover top of bottle, solution was very consistent and smooth \\
     \hline
@@ -495,7 +495,7 @@ The following table displays the equation for the line of best fit and $R^2$ val
 
 \newpage
 
-With the processed data in tablex, reaction velocity can be plotted against glucose concentration to obtain the Michaelis Menten model. Doing a curve fit in excel reveals $V_{max} \approx 64.1\,\si{ppm.s^{-1}}$ and $K_m \approx 0.001\,\si{M}$
+With the processed data in Table (5), reaction velocity can be plotted against glucose concentration to obtain the Michaelis Menten model. Doing a curve fit in excel reveals $V_{max} \approx 64.1\,\si{ppm.s^{-1}}$ and $K_m \approx 0.0001\,\si{M}$
 \begin{figure}[H]
     \renewcommand{\figurename}{Graph}
     \setcounter{figure}{4}
@@ -511,26 +511,30 @@ Firstly, all concentration-time graphs were normalized such that the carbon diox
 
 \medskip
 
-For the most part, all concentration-time graphs followed a linear trend for the first 10 minutes of the reaction. This implies a zero order reaction, meaning at this stage, the initial reaction velocity is independent of the glucose concentration. However, none of the graphs exhibited the end behaviour as the reaction approaches equilibrium, because it was only allowed to react for 10 minutes. Thus, the fermentation process of yeast was a slower reaction than proposed in the hypothesis.
+For the most part, all concentration-time graphs followed a linear trend for the first 10 minutes of the reaction. This implies a zero order reaction, meaning at this stage, the initial reaction velocity is independent of the glucose concentration. However, none of the graphs exhibited the end behaviour if the reaction approached equilibrium, because the reaction was stopped after 10 minutes. Thus, the fermentation process of yeast was a slower reaction than proposed in the hypothesis.
 
 \medskip
 
-The processed data in Graph (3) somewhat fit the general trend of the Michaelis Menten model. The theoretical curve fitted to the data is valid because it crosses through all the vertical error bars. From the calculated values of $V_{max}$ and $K_m$, several conclusions can be made about the fermentation process of yeast. A very low value of $K_m$ suggests that enzymes have a very high affinity for the substrate \parencite{biochem}, and which makes sense because according to Equation (15), a small $K_m$ implies a large denominator, meaning the concentration of enzyme substrate complex is significantly larger.
+The processed data in Graph (5) somewhat fits the general trend of the Michaelis Menten model. The theoretical curve fitted to the data is valid because it crosses through all the vertical error bars. From the calculated values of $V_{max}$ and $K_m$, several conclusions can be made about the fermentation process of yeast in the experiment. A very low value of $K_m$ suggests that enzymes have a very high affinity for substrate binding (Berg et al., 2006), which makes sense because according to Equation (15), a small $K_m$ implies a large denominator, meaning the concentration of enzyme substrate complex is significantly larger.
 
 \medskip
 
-Additionally, the Michaelis Menten model is consistent with the raw data. Starting from around 0.005\,\ce{M}, the initial reaction velocity starts to become independent of the substrate concentration. This is consistent with the concentration-time graphs because they start off as 0 order reaction, and their initial reaction velocity seems to reside in the range where the Michaelis Menten curve starts to become asymptotic. Theoretically, the fermentation could start off as a first order reaction if the glucose concentration was small enough, since the initial reaction velocity increases linearly with changes of concentration about the origin.
+Additionally, the Michaelis Menten model is consistent with the raw data. From around 0.005\,\ce{M}, the initial reaction velocity starts to become independent of the substrate concentration. This is consistent with the concentration-time graphs because they start off as zero order reaction, and their initial reaction velocity seems to reside in the range where the Michaelis Menten curve starts to become asymptotic.
 
 \section{Evaluation}
-The largest potential source of error was deduced to be the temperature of the water, because it was difficult to keep constant, especially in between trials when the warm water bath was refilled. The temperature reading on the magnetic stirring hotplate wasn't the same as the water, meaning it was adjusted a few times, leaving room for a range of solution temperatures, which increases or decreases the rate at which carbon dioxide gas was produced, if the temperature was higher or lower, respectively.
+The largest potential source of error was deduced to be the temperature of the water, because it was difficult to keep constant, especially in between trials when the warm water bath was refilled. The temperature reading on the magnetic stirring hotplate wasn't the same as the water, meaning it was adjusted a few times, leaving room for a range of solution temperatures, affecting the rate of reaction of carbon dioxide production.
 
 \medskip
 
-Observing the Michaelis Menten plot, the reaction velocity should increase as substrate concentration increases, not decrease, as observed with the plotted data. This implies that the reaction velocity should have been higher when it was not. The two major assumed reasons for this major discrepancy are listed as follows.
+Observing the Michaelis Menten plot, the reaction velocity should increase as substrate concentration increases. However, the initial reaction velocity decreases with substrate concentration from 0.25\,\si{g} to 1.00\,\si{g} of glucose added. This implies that the reaction velocity should have been higher when it was not. The two major reasons assumed for this major discrepancy are listed as follows.
 
 \medskip
 
-First of all, adding yeast and glucose to the bottle when the insides are wet causes some of the substances to stick to the sides. Although the bottle was swirled with water after this happened, it's likely that not all the yeast ended up reacting to all the glucose. Secondly, the time between experiments could have been too short. Usually the first experiment of the day yields the most accurate results, but it's possible that not enough time was given carbon dioxide in the \ce{CO2} gas sensor to completely diffuse out, decreasing the effectiveness in the instrument.
+First of all, adding yeast and glucose to the bottle when the insides are wet causes some of the substances to stick to the sides. Although the bottle was swirled with water after this happened, it's likely all not all the yeast and glucose ended up reacting.
+
+\medskip
+
+Secondly, the time between experiments could have been too short. Usually the first experiment of the day yields the most accurate results, but it's possible that not enough time was given carbon dioxide in the \ce{CO2} gas sensor to completely diffuse out, decreasing the effectiveness in the instrument.
 
 \medskip
 
