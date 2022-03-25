@@ -3,7 +3,7 @@ IB SL Chemistry Internal Assessment written in LaTeX
 
 ### Notes
 - If any changes are made to the `.tex` file, the submitted version can be found [here](https://github.com/Togohogo1-Archive/chem-ia/tree/bfd3f8caae9ef53fb14fbef3946d3bf861beea6f).
-- Other files such as raw exported data and spreadsheets are not included in this repo.
+- Auxiliary files such as raw exported data and spreadsheets are found on google drive.
 
 ### Workspace Settings in `.vscode/settings.json`
 - Compiling with `-xelatex` prevents errors caused by Unicode characters.
